@@ -12,16 +12,16 @@ function App() {
     <div className="App">
       <h1>Spryte</h1>
       <p>
-        Spryte generates symmetrical avatars from text inputs such as emails, usernames, or IDs.
+        Spryte generates avatars from text inputs such as emails, usernames, or IDs.
       </p>
-      <hr />
       <input
         placeholder="Type here"
         onChange={(e) => changeImage(e.target.value)}
       />
       <h2>Avatar</h2>
-      <img alt="avatar" src={`http://localhost:3003/${imageID}`} />
-      <p>http://localhost:7230/{imageID}</p>
+      <a href={`http://localhost:7231/${imageID}`} target='_blank' rel='noopener noreferrer'>
+        <img alt="avatar" src={`http://localhost:7231/${imageID}`} />
+      </a>
     </div>
   );
 }
