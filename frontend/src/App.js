@@ -12,9 +12,7 @@ function App() {
     <div className="App">
       <h1>Spryte</h1>
       <p>
-        Spryte is easy to use app that generates symmetric avatars. Provide any
-        kind of text, such as email, username, id, or whatever you like and get
-        back a nice avatar.
+        Spryte generates symmetrical avatars from text inputs such as emails, usernames, or IDs.
       </p>
       <hr />
       <input
@@ -23,7 +21,7 @@ function App() {
       />
       <h2>Avatar</h2>
       <img alt="avatar" src={`http://localhost:3003/${imageID}`} />
-      <p>http://localhost:3003/{imageID}</p>
+      <p>http://localhost:7230/{imageID}</p>
     </div>
   );
 }
